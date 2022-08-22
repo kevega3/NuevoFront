@@ -9,41 +9,47 @@
     // left: '0%',
 });
 
-// $("#circlein").animatedModal({
-//     animatedIn: 'bounceIn',
-//     animatedOut: 'bounceOut',
-//     color: '#ffffff',
-//     width: '67% ',
-//     left: '33%',
-// });
+$(".circlein").animatedModal({
+    animatedIn: 'lightSpeedIn',
+    animatedOut: 'bounceOutDown',
+    color: '#000000',
+    width: '70% ',
+    left: '0%',
+});
 
 
 var vid = document.getElementById("myVideo");
+var vid2 = document.getElementById("myVideo2");
 
 function enableAutoplay(id, Video) {
-    var ada = MiraYoutube();
     var idVideo = id;
     idVideo.setAttribute('src', Video);
     vid.autoplay = true;
     vid.load();
-    return ada;
-    
 }
-
 function disableAutoplay() {
-    var ada = MiraYoutube();
-    // var contVi = contenidoViñeta1();
-    // var vinieta = AddVinieta();
     vid.autoplay = false;
     vid.load();
-    return ada;
 }
+
+function enableAutoplayWhats(id, Video) {
+    
+    var idVideo = id;
+    idVideo.setAttribute('src', Video);
+    vid2.autoplay = true;
+    vid2.load();
+}
+function disableAutoplayWhats() {
+    vid2.autoplay = false;
+    vid2.load();
+}
+
+
 
 
 document.getElementById("myVideo").addEventListener("ended", function () {
     document.getElementById("botonFinal").click();
-    // AddVinieta();
-    // MiraYoutube();
-    contenidoViñeta1();
-    
+});
+document.getElementById("myVideo2").addEventListener("ended", function () {
+    document.getElementById("botonFinalWhats").click();
 });

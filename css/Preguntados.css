@@ -1,0 +1,39 @@
+.ContenedorPreguntados{
+background: white;
+    width: 100%;
+    height: 98vh;
+}
+
+
+
+.contenedorLista{
+    border: solid 2px #c2c2c2;
+    padding: 15px 20px; 
+    position: relative;
+    background: #e6e4e4;
+    margin-top: 5%;
+    transition: .4s;
+}
+
+.CuadritoMelo{
+    position: absolute;
+    height: 95%;
+    
+    width: 10px;
+    top: 2.3%;
+    left: 0.5%;
+}
+
+.contenedorLista:hover{
+    background: rgb(196, 196, 196);
+
+}
+
+
+
+.ContenedorVideosInvisbles{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+

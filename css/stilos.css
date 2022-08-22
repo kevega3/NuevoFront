@@ -119,6 +119,7 @@ height: 1vw;
 .ColumnBtonsContenedors col{
     padding-right: calc(var(--bs-gutter-x) * .10);
     padding-left: calc(var(--bs-gutter-x) * .10);
+    
 }
 
 .quit{

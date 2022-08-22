@@ -31,33 +31,56 @@ section p {
 }
 
 .texts p {
-  color: black;
+  /* color: black;
   text-align: left;
   width: auto;
   border-radius: 15px;
+  margin-bottom: 9px; */
   
+  width: auto;
+  border-radius: 10px;
+  margin-bottom: 9px;
 }
 
 
 .Persona{
-  float: left;
-  /* padding: 12px; */
+  /* float: left;
   background: rgb(202, 198, 198);
   
   
   position: relative;
-  padding: 12px 90px 7px 40px;
+  padding: 12px 90px 7px 40px; */
+  text-align: left;
+  float: left;
+  background: #3b424a;
   
- 
+  position: relative;
+  padding: 12px 90px 7px 40px;
+  color: white;
+  
+  margin-inline-start: 2%;
+
 }
+  
+
+
 .texts p.replay {   
-  text-align: right; 
+  /* text-align: right; 
   float: right; 
   background: #d1fca9;
   
   padding-bottom: 25px;
   position: relative;
-  padding:12px 20px 20px 40px;
+  padding:12px 20px 20px 40px; */
+
+    text-align: right;
+    float: right;
+    background: #03665b;
+    padding-bottom: 25px;
+    position: relative;
+    padding: 12px 20px 20px 40px;
+    color: white;
+    margin-inline-end: 2%;
 }
 
 .texts p.replayMuchos {   
@@ -71,21 +94,33 @@ section p {
 
 
 .displayHours{
-  font-size: 12px;
+  /* font-size: 12px;
   position: absolute;
   right: 12%;
   bottom: 5%;
-  color: rgb(133, 131, 131);
+  color: rgb(133, 131, 131); */
+
+  font-size: 12px;
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    color: rgb(201 196 196);
 }
 
 
 .iconocheck{
-  font-size: 12px;
+  /* font-size: 12px;
   position: absolute;
 
   right: 7%;
   bottom: 11%;
-  color: rgb(133, 131, 131);
+  color: rgb(133, 131, 131); */
+
+  font-size: 12px;
+    position: absolute;
+    right: 6%;
+    bottom: 7%;
+    color: rgb(1 185 255);
 }
 .CheckMelo{
   font-size: 15px;
@@ -127,7 +162,9 @@ div.scroll {
 }
 
 .HeaderChatAda{
-  background: #065D54;
+  /* background: #065D54; */
+  background: #27363c;
+  
   width: 100%;
   height: 60px;
   justify-content: center;
@@ -149,8 +186,47 @@ div.scroll {
 }
 .ContenedorWhats{
   position: relative;
-  background: white;
+  background: transparent;
+  /* background: url("../img/descargarss.jpg"); */
+  width: 100%;
+  height: 98vh;
+  
+}
+.fondoWhats{
+  position: absolute;
+  background: url("../img/fondos-whatsapp-hd-negro-4k-iphone-android-chat-22.png"); 
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.ColumnBtonsContenedors{
+  /* background: #cbcbcb; */
+  background: #072330;
+  position: relative;
   width: 100%;
   height: 98vh;
 }
 
+
+.Pestaña{
+    position: absolute;
+    top: 0;
+    right: -3%;
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid #03665b;
+    border-bottom: 30px solid transparent;
+    border-radius: 0% 10% 40% 0%;
+}
+
+.PestañaPersona{
+  position: absolute;
+  top: 0;
+  left: -4%;
+  
+  width: 0; 
+  height: 0; 
+  border-right: 30px solid #3b424a;
+  border-bottom: 30px solid transparent;
+  border-radius: 10% 0%   0% 40%; 
+}

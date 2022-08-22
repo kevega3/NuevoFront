@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../css/AnimateVoice.css">
     <link rel="stylesheet" href="../css/Videos.css">
     <link rel="stylesheet" href="../css/spriteAda.css">
+    <link rel="stylesheet" href="../css/ADA.css">
+    <link rel="stylesheet" href="../css/Preguntados.css">
     <!-- MODAL MICRO -->
     <link rel="stylesheet" href="../css/botnMin.css">
     <link rel="stylesheet" href="../css/chatBot.css">
@@ -28,7 +30,7 @@
         rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    
+
     <!-- Comando de voz -->
 
 
@@ -47,54 +49,91 @@ font-weight: bold;">
 
 
     <div class="contenedorGeneral container-fluid">
+        <!-- Intro -->
+        <div class="ContenedorIntro box quit" >
+            <div class="row">
+                <div class="col-3 ColumnaIntroADA  ">
+                    <img class="LogoCACIntro" src="../img/LOGO CAC_Colores y Blanco.png" alt="" width="95%">
+                </div>
+                <div class="col-6 ColumnaIntroADA ">
 
-    <!-- Header -->
+                <?php include('BotonesIntro.html')?>
 
-    
-    <!-- Header -->
-
-
-
-
-        <!--Contenedor General-->
-        <div class="row Stear">
-            <!-- VideosYoutube -->
-            <div class="col-4  ColumnVideosContenedors1">
-                <?php include("Videos.html")?>
+                    <img class="ADAFREntre" src="../img/ADA/ADAFrente.gif" alt="" width="95%">
+                </div>
+                <div class="col-3 ColumnaIntroADA">
+                    <img class="Logo15AñosIntro" src="../img/15-años-logo-NegroDERE.png" alt="" width="75%">
+                </div>
             </div>
-
-            <!-- VideosYoutube -->
-
-            
-            <!--Ada-->
-            <div class="col-4 ColumnaADAContenedor">
-                <?php include("Ada.html")?>
-                
-            </div>
-            <!--Ada-->
-
-            <!-- WhatsApp -->
-            <div class="col-4    ColumnBtonsContenedors Stear">
-                <?php include("ModalMin.html"); ?>
-                <!--Final Columna Btones-->
-            </div>
-            <!-- WhatsApp -->
-            
-
-            <!--Final Row-->
         </div>
+        <!-- Intro -->
+
+
+
+        <!-- Videos -->
+        <div class="ContenedorVideosGeneral quit box">
+            <div class="row">
+
+                <div class="col-6  ColumnVideosContenedors1  ">
+                    <?php include("Videos.html")?>
+                </div>
+
+                <div class="col-6 ContenedorADAYoutube">
+                    <?php include("AdaYoutube.html")?>
+                </div>
+            </div>
+        </div> <!-- ContenedorGenralVideos -->
+        <!-- Videos -->
 
 
 
 
 
-        <div class="Footer ">
-           <?php  include('Footer.html')?>
-        </div>
+
+        <!-- WhatsApp  -->
+        <div class="ContenedorWhatsAPPGeral  box">
+            <div class="row">
+                <div class="col-5 ContenedorADAWhast">
+                    <?php include("AdaWhats.html"); ?>
+                    <?php include("VideosWhats.html"); ?>
+                </div>
+                <div class="col-3 ContenedorPreguntados">
+                <?php include("Preguntados.html"); ?>
+                </div>
+                <div class="col-4 ColumnBtonsContenedors">
+                    <?php include("ModalMin.html"); ?>
+                </div>
+            </div>
+
+        </div><!-- finalContenedorWhats -->
+        <!-- WhatsApp  -->
 
 
-        <!--Fin Contenedor General-->
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
+    <!--Final ContenedorGeral-->
+
+
+
+
+
+    <div class="Footer ">
+        <?php  include('Footer.html')?>
+    </div>
+
+
 
 
 
@@ -107,16 +146,16 @@ font-weight: bold;">
     <script src="../js/animacionModal.js"></script>
     <script src="../js/PlayVideos.js"></script>
     <script src="../js/AnimacionADA.js"></script>
+    <script src="../js/Preguntados.js"></script>
 
 
     <!--Fonazome-->
-    <script src="https://kit.fontawesome.com/62cb762d5c.js" crossorigin="anonymous"></script>
+    <script src="../js/Icons.js"></script>
     <!--  -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     </script>
     <!-- Letras -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="../js/Animacion_Letras.js"></script> -->
+
 
 
 
