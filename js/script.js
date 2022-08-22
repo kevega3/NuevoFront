@@ -1,3 +1,13 @@
+function ActivarBotones(){
+  $(".contenedorLista").removeAttr('disabled');
+}
+
+
+function BloquearBotones(){
+  $(".contenedorLista").attr('disabled', 'disabled');
+}
+
+
 // Horas
 function Horas(){
   var currentTimes = new Date();
@@ -45,9 +55,10 @@ function saludaSpoty() {
   var SaludarSpoty = document.getElementById("Saludar");
   if (hours < 24 && hours > 18) {
     SaludarSpoty.innerHTML = "Buenas Noches";
-  } else if (hours > 24 && hours < 12) {
+  } else if (hours > 1 && hours < 12) {
     SaludarSpoty.innerHTML = "Buenos Días";
   } else {
+    alert(hours);
     SaludarSpoty.innerHTML = "Buenas Tardes";
   }
 
@@ -56,7 +67,10 @@ function saludaSpoty() {
 // Saludo Youtube
 
 // ReconocimientoVoice
-function activeVoice() {
+function activeVoice() { 
+
+  $(".BloquearBoton").attr('disabled', 'disabled');
+  
   QuitarBtonMi();
   PosicionUno();
   const texts = document.querySelector(".texts");
@@ -104,6 +118,7 @@ function activeVoice() {
   });
   recognition.addEventListener("end", () => {
     PonerQuitarBtonMi();
+    $(".BloquearBoton").removeAttr('disabled');
   });
   recognition.start();
 }
@@ -112,7 +127,9 @@ function activeVoice() {
 // BotonesPreguntados
 
 function Preguntados(pregunta) {
-
+  // DesactivaBtn
+  $(".BloquearBoton").attr('disabled', 'disabled');
+  // DesactivaBtn
   const texts = document.querySelector(".texts");
   let p = document.createElement("p");
   let horas = document.createElement("span");

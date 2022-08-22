@@ -50,14 +50,14 @@ font-weight: bold;">
 
     <div class="contenedorGeneral container-fluid">
         <!-- Intro -->
-        <div class="ContenedorIntro box quit" >
+        <div class="ContenedorIntro box quit">
             <div class="row">
                 <div class="col-3 ColumnaIntroADA  ">
                     <img class="LogoCACIntro" src="../img/LOGO CAC_Colores y Blanco.png" alt="" width="95%">
                 </div>
                 <div class="col-6 ColumnaIntroADA ">
 
-                <?php include('BotonesIntro.html')?>
+                    <?php include('BotonesIntro.html')?>
 
                     <img class="ADAFREntre" src="../img/ADA/ADAFrente.gif" alt="" width="95%">
                 </div>
@@ -98,7 +98,7 @@ font-weight: bold;">
                     <?php include("VideosWhats.html"); ?>
                 </div>
                 <div class="col-3 ContenedorPreguntados">
-                <?php include("Preguntados.html"); ?>
+                    <?php include("Preguntados.html"); ?>
                 </div>
                 <div class="col-4 ColumnBtonsContenedors">
                     <?php include("ModalMin.html"); ?>
@@ -120,6 +120,9 @@ font-weight: bold;">
 
 
 
+        <div class="Footer ">
+        <?php  include('Footer.html')?>
+    </div>
 
 
     </div>
@@ -129,10 +132,7 @@ font-weight: bold;">
 
 
 
-    <div class="Footer ">
-        <?php  include('Footer.html')?>
-    </div>
-
+    
 
 
 

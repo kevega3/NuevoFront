@@ -88,6 +88,7 @@ function BocaADA(time){
     }, time);
     setTimeout(()=>{
         ADAIMg.setAttribute('src', '../img/ADA/ADA-lateral-der.gif');
+        
     }, time);
 }
 
@@ -105,7 +106,9 @@ function EsperaAudio(texto,time,masTime,btn) {
     }, time+masTime);
     setTimeout(() => {
         document.getElementById(btn).click()
-        
+        // BloqueaBotones
+        $(".BloquearBoton").removeAttr('disabled');
+        // BloqueaBotones
     }, time+masTime+500);
 }
 

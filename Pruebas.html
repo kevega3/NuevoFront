@@ -1,0 +1,36 @@
+<script src="js/jquery.min.js"></script>
+
+<script>
+
+
+
+function ActivarBotones(){
+    $(".btnSubmit").removeAttr('disabled');
+}
+
+
+function BloquearBotones(){
+    $(".btnSubmit").attr('disabled', 'disabled');
+}
+</script>
+
+
+
+<button id="btnSubmit" class="btnSubmit"  >Click Me</button>
+<button id="btnSubmit" class="btnSubmit"  >Click Me</button>
+
+<button id="btnSubmit" class="btnSubmit"  >Click Me</button>
+<button id="btnSubmit" class="btnSubmit"  >Click Me</button>
+
+<button id="btnSubmit" class="btnSubmit"  >Click Me</button>
+<button id="btnSubmit" class="btnSubmit"  >Click Me</button>
+<button id="btnSubmit" class="btnSubmit"  >Click Me</button>
+
+<button id="btnSubmit" class="btnSubmit"  >Click Me</button>
+<button id="btnSubmit" class="btnSubmit"  >Click Me</button>
+<button id="btnSubmit" class="btnSubmit"  >Click Me</button>
+
+
+<button onclick="ActivarBotones()">ActivarBotones</button>
+
+<button onclick="BloquearBotones()">BloquearBotones</button>
