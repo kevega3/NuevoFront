@@ -182,59 +182,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000f72', end
   overflow-y: hidden;
   white-space: nowrap;
 }
-.contenedorVideoCart{
+.contenedorVideoCart {
   display: inline-block;
-  margin: 0% 2%;
-}
-.headerVideoCart{
-  position: relative;
-  
-
-}
-.headerVideoCart img{
-  position: relative; 
-  width: 180px;
-  height: 180px;
-}
-
-.defuminadoMelo{
-  background: #170468;
-
+  margin: 2% 2%;
   
 }
-.demo02 img{
-  opacity: 0.5;
-}
 
 
 
+.demo02 {
+  text-decoration: none;
+} 
 
-.PrimerCuadro{
-  position: absolute;
-  height: 20px;
-  width: 3%;
-  top: 75%;
-  left: 0%;
-}
 
-.SegundoCuadro{
-  position: absolute;
-  height: 5%;
-  width: 100%;
-  bottom: 0%;
-}
-.TituloVideoCAC{
-  position: absolute;
-  color: white;
-  font-weight:900 ;
-  top: 75%;
-  left: 5%;
-}
-
-.bodyCartVideo h6,p{
+.pl-about{
   color: rgb(172, 172, 172);
   padding: 0;
   margin: 0;
+  font-size: 12px;
 }
 
 .bodyCartVideo p{
@@ -276,8 +241,105 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000f72', end
 
 
 
-/* .queEs{
+/* CArt */
+.watermark{
+  width: 20px;
   position: absolute;
-  top: 15%;
-  left: 5.5%;
-} */
+  left: 0.5rem;
+  top: 1rem;
+
+}         
+.cardSpoty{
+  --size: 200px;
+  width: var(--size);
+  
+  padding: 5px 10px 10px 10px ;
+  background: #111111;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 2ms;
+}   
+.cardSpoty:hover{
+  background: #222222;
+}
+.cover{
+  width: 180px;
+    height: 170px;
+    position: relative;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  border-radius: 10%;
+} 
+.imgSpoty{
+  position: absolute;
+  width: 180px;
+  height: 148px;
+  border-radius:  5px 5px 10px 10px;
+  opacity: 0.3;
+  
+}
+
+
+
+
+.pb-wrapper{
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: 320ms;
+}
+.cardSpoty:hover .pb-wrapper{
+  bottom: 1rem;
+  opacity: 1;
+  
+}
+.play-buttom{
+  width: 40px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  background: green;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.0rem;
+  box-shadow: 0 8px 8px rgba(0,0,0,0.3);
+}
+
+.PrimerCuadro{
+position: absolute;
+height: 20px;
+width: 4%;
+top: 65%;
+left: 0%;
+}
+
+
+.SegundoCuadro{
+position: absolute;
+height: 5%;
+width: 100%;
+bottom: 6%;
+left: 0;
+border-radius:  0 0 10px 10px;
+}
+.TituloVideoCAC{
+position: absolute;
+color: white;
+font-weight:900 ;
+top: 65%;
+left: 5%;
+}
+
+.invisiblespoty{
+  color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+/* CArt */

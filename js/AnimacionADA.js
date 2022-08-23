@@ -49,14 +49,14 @@ function VolverInicioYoutube(){
 
 
 
-function cambiaImg(){
-    var ADAIMg = document.getElementById("Ada");
-    ADAIMg.setAttribute('src', '../img/ADA/ADA_Respira.gif');
-    ADAIMg.setAttribute('style', 'width:73%');
-    $(".ContenedorBars").addClass("quit");
-    $(".BoxMicro").removeClass("quit");
-    $("#Ada").addClass("boxBoton");
-}
+// function cambiaImg(){
+//     var ADAIMg = document.getElementById("Ada");
+//     ADAIMg.setAttribute('src', '../img/ADA/ADA_Respira.gif');
+//     ADAIMg.setAttribute('style', 'width:73%');
+//     $(".ContenedorBars").addClass("quit");
+//     $(".BoxMicro").removeClass("quit");
+//     $("#Ada").addClass("boxBoton");
+// }
 
 // function MiraYoutube(){
 //     var ADAIMg = document.getElementById("Ada");
@@ -88,13 +88,13 @@ function BocaADA(time){
     }, time);
     setTimeout(()=>{
         ADAIMg.setAttribute('src', '../img/ADA/ADA-lateral-der.gif');
-        
+        $(".contenedorLista").removeAttr('disabled');
+        $(".BloquearBoton").removeAttr('disabled', 'disabled');
     }, time);
 }
 
 
 function EsperaAudio(texto,time,masTime,btn) {
-    
     setTimeout(() => {
         responsiveVoice.speak(texto, 'Spanish Latin American Female');
         ADAIMg.setAttribute('src', '../img/ADA/ADA-lateral-der-2.gif');
@@ -106,9 +106,6 @@ function EsperaAudio(texto,time,masTime,btn) {
     }, time+masTime);
     setTimeout(() => {
         document.getElementById(btn).click()
-        // BloqueaBotones
-        $(".BloquearBoton").removeAttr('disabled');
-        // BloqueaBotones
     }, time+masTime+500);
 }
 

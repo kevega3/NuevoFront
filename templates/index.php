@@ -71,7 +71,7 @@ font-weight: bold;">
 
 
         <!-- Videos -->
-        <div class="ContenedorVideosGeneral quit box">
+        <div class="ContenedorVideosGeneral  box">
             <div class="row">
 
                 <div class="col-6  ColumnVideosContenedors1  ">
@@ -91,7 +91,7 @@ font-weight: bold;">
 
 
         <!-- WhatsApp  -->
-        <div class="ContenedorWhatsAPPGeral  box">
+        <div class="ContenedorWhatsAPPGeral quit box">
             <div class="row">
                 <div class="col-5 ContenedorADAWhast">
                     <?php include("AdaWhats.html"); ?>

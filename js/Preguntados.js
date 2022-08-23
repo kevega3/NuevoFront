@@ -390,6 +390,43 @@ function Desicion(check, horas, texts, p, text) {
 
 
 
+// HITOSCAC
+else if (text.includes("¿Qué No es la Cuenta de Alto Costo?")) {
+  p = document.createElement("p");
+  p.classList.add("replay");
+  p.innerText = "La implementacion de blockchain en la salud nos permite tener datos limpios y trasparentes asi aumentando la seguridad de la informacion,dame un momento🤓";
+
+  texts.appendChild(p).appendChild(horas);
+  p.appendChild(check);
+  p.appendChild(pestañaChat);
+  pestañaChat.classList.add("Pestaña");
+
+
+  // BocaADA(6000);
+  // responsiveVoice.speak('La implementacion de blockchain en la salud nos permite tener datos limpios y trasparentes.', 'Spanish Latin American Female');
+
+  // EsperaAudio("así aumentando la seguridad de la informacion, dame un momento", 7000, 4100, "btn100");
+
+}
+
+
+// HITOSCAC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   else {
     p = document.createElement("p");
     p.classList.add("replay");
