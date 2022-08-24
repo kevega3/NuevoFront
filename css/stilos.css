@@ -121,7 +121,9 @@ height: 1vw;
     padding-left: calc(var(--bs-gutter-x) * .10);
     
 }
-
+.bg-AzulMorado{
+    background: #31178f;
+}
 
 .quit{
     display: none;

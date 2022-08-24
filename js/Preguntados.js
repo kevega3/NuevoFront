@@ -1,6 +1,7 @@
 function Desicion(check, horas, texts, p, text) {
-  let pestañaChat = document.createElement("span");
 
+  var check1 = check;
+  let pestañaChat = document.createElement("span");
   scrollPro();
   if (text.includes("Hola") || text.includes("Buenas tardes") || text.includes("Buenos días")) {
     p = document.createElement("p");
@@ -56,7 +57,11 @@ function Desicion(check, horas, texts, p, text) {
     responsiveVoice.speak('Mi nombre es ADA mucho gusto', 'Spanish Latin American Female');
     BocaADA(1800);
 
-  } else if (text.includes("qué siscat") || text.includes("qué siscac") || text.includes("Qué es sis Cat") || text.includes("Qué es SISCAC")) {
+  }
+  
+  // Preguntas 
+  // Preguntas 
+  else if (text.includes("siscat") || text.includes("siscac") || text.includes("sis Cat") || text.includes("Qué es SISCAC")) {
     p = document.createElement("p");
     p.classList.add("replay");
     p.innerText = "SISCAC es la plataforma dispuesta por la Cuenta de Alto Costo, para que las IPS y EPS puedan registrar y validar en tiempo real la información de los pacientes de alto costo. 😌 ";
@@ -72,21 +77,7 @@ function Desicion(check, horas, texts, p, text) {
     EsperaAudio(" registrar y validar en tiempo real la información de los pacientes de alto costo.", 7500, 5000, "btn101");
 
 
-  } else if (text.includes("una pregunta") || text.includes("tengo una pregunta")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "Claro dimela 😉";
-
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-    p.appendChild(pestañaChat);
-    pestañaChat.classList.add("Pestaña");
-
-    responsiveVoice.speak('Claro dimela', 'Spanish Latin American Female');
-    BocaADA(1800);
-
-  }
-  else if (text.includes("abdicar") || text.includes("auditar") || text.includes("Autocad") || text.includes("Qué es AudiCAC")) {
+  } else if (text.includes("abdicar") || text.includes("auditar") || text.includes("Autocad") || text.includes("Qué es AudiCAC") || text.includes("Audi car") ) {
     p = document.createElement("p");
     p.classList.add("replay");
     p.innerText = "AudiCAC es Aplicativo dispuesto para la auditoria de pacientes reportados por las entidades, aqui te muestro un video. 😉";
@@ -100,270 +91,9 @@ function Desicion(check, horas, texts, p, text) {
 
     BocaADA(6000);
     EsperaAudio("Aqui un video", 7000, 1800, "btn100");
-
-
-
   }
-  else if (text.includes("Qué es la mesa de ayuda") || text.includes("mesa de ayuda")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "Aplicativo dispuesto para las entidades y los funcionarios de la CAC donde pueden realizar solicitudes para solventar problemas relacionados con la operación de la CAC. 🥰";
-
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-    p.appendChild(pestañaChat);
-    pestañaChat.classList.add("Pestaña");
-
-    responsiveVoice.speak('Aplicativo dispuesto para las entidades y los funcionarios de la CAC donde pueden realizar', 'Spanish Latin American Female');
-    BocaADA(5700);
-
-    EsperaAudio("solicitudes para solventar problemas relacionados con la operación de la CAC, Aqui un video", 6500, 5800, "btn100");
-
-
-
-  }
-  else if (text.includes("Qué es la caca") || text.includes("Qué es la Cat") || text.includes("Qué es la cuenta de alto costo") || text.includes("Que es la CAC ?")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = " LA CAC (Cuenta de Alto Costo) 🥰 Somos una institución que facilita la gestión de las entidades del sistema de salud mediante la generación de información objetiva y confiable.Ya te doy mas detalles 😍";
-
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-    p.appendChild(pestañaChat);
-    pestañaChat.classList.add("Pestaña");
-
-    responsiveVoice.speak('Somos una institución que facilita la gestión de las entidades del sistema de salud, ', 'Spanish Latin American Female');
-    BocaADA(5300);
-    EsperaAudio("mediante la generación de información objetiva y confiable, ya te doy mas detalles", 5900, 5600, "btn102");
-
-
-
-  } else if (text.includes("valores corporativos")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "👩‍🦰 Nuestro valores corporativos son: la Integridad, La Confiabilidad, integridad, Innovacion  y la excelencia  😀";
-
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-    p.appendChild(pestañaChat);
-    pestañaChat.classList.add("Pestaña");
-
-  } else if (text.includes("coordinaciones") || text.includes("coordinaciones de la cuenta") || text.includes("coordinaciones la cuenta")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "La CAC cuenta con 7 coordinaciones entre ellas se encuentran: ";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replayMuchos");
-    p.classList.add("box");
-    p.innerText = "Coordinación Administrativa 👏";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replayMuchos");
-    p.classList.add("box");
-    p.innerText = "🧐 Coordinación de auditoria ";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replayMuchos");
-    p.classList.add("box");
-    p.innerText = "Coordinación I+I+D 🤓";
-    texts.appendChild(p);
-
-
-    p = document.createElement("p");
-    p.classList.add("replayMuchos");
-    p.classList.add("box");
-    p.innerText = "🧐 Coordinación gestión del conocimiento ";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replayMuchos");
-    p.classList.add("box");
-    p.innerText = "Coordinación gestión del riesgo 🤭";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.classList.add("box");
-    p.innerText = " 😍 Coordinación de tecnología Y la Coordinación de calidad. ";
-    texts.appendChild(p);
-  }
-  else if (text.includes("Qué enfermedades maneja la cuenta") || text.includes("Qué enfermedades")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "La CAC maneja entre sus enfermedades :";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replayMuchos");
-    p.classList.add("box");
-    p.innerText = "Artritis Reumatoide";
-    texts.appendChild(p);
-
-
-    p = document.createElement("p");
-    p.classList.add("replayMuchos");
-    p.classList.add("box");
-    p.innerText = "Hemofilia";
-    texts.appendChild(p);
-
-
-    p = document.createElement("p");
-    p.classList.add("replayMuchos");
-    p.classList.add("box");
-    p.innerText = "Enfermedad renal crónica";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replayMuchos");
-    p.classList.add("box");
-    p.innerText = "VIH";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.classList.add("box");
-    p.innerText = "Cáncer Y Hepatitis C";
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-
-  }
-  else if (text.includes("Cómo se construyó la caca") || text.includes("Cómo se fundó la caca") || text.includes("Cómo nació la caca") || text.includes("Cómo nació la cuenta de alto costo") || text.includes("Cómo se creó la cuenta alto costo")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "😀 La Cuenta de Alto Costo es un organismo técnico no gubernamental del Sistema General de  Salud de Colombia creado mediante el Decreto 2699 de 2007 Con el fin de mejorar el sistema de salud🧐";
-
-
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-    p.appendChild(pestañaChat);
-    pestañaChat.classList.add("Pestaña");
-
-
-    responsiveVoice.speak(' La Cuenta de Alto Costo es un organismo técnico no gubernamental del Sistema General de  Salud de Colombia creado mediante el Decreto 2699 de 2007 Con el fin de mejorar el sistema de salud.', 'Spanish Latin American Female');
-    BocaADA(5300);
-    // EsperaAudio("mediante la generación de información objetiva y confiable, ya te doy mas detalles", 5900, 5600,"btn100");
-
-
-  } else if (text.includes("Qué aplicativos tiene ") || text.includes("qué aplicativos tiene")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "😀 La CAC cuenta con aplicativos de uso interno como externo el nombre de ellos son:";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.classList.add("box");
-    p.innerText = "SISCAC ";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.classList.add("box");
-    p.innerText = "Mesa de ayuda ";
-    texts.appendChild(p);
-
-
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.classList.add("box");
-    p.innerText = "AudiCAC";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.classList.add("box");
-    p.innerText = "Aulas Virtuales y nuestro Sitio Web ";
-    texts.appendChild(p);
-
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.classList.add("box");
-    p.innerText = "🙋‍♀️ ¿Quieres saber para que se crearon ?  Solo preguntame  🤭";
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-
-
-  }
-
-
-  // Videos
-  else if (text.includes("b&h y Sida") || text.includes("b y H sida") || text.includes("b y H sida") || text.includes("Cómo acceder a los libros de situación de b&h Sida en la población afiliada ")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "Claro que si, ya te muestro ";
-
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-    p.appendChild(pestañaChat);
-    pestañaChat.classList.add("Pestaña");
-
-
-    BocaADA(2000);
-    responsiveVoice.speak('Claro que si, ya te muestro', 'Spanish Latin American Female');
-
-    setTimeout(() => {
-      document.getElementById("btn1").click()
-    }, 3000);
-
-  } else if (text.includes("libros cáncer") || text.includes("cáncer") || text.includes("Cómo acceder a los libros de la situación del cáncer en la población afiliada")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "Claro que si, ya te muestro 🤩";
-
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-    p.appendChild(pestañaChat);
-    pestañaChat.classList.add("Pestaña");
-
-
-    BocaADA(2000);
-    responsiveVoice.speak('Claro que si, ya te muestro', 'Spanish Latin American Female');
-
-    setTimeout(() => {
-      document.getElementById("btn2").click()
-    }, 3000);
-
-  } else if (text.includes("arca") || text.includes("arcade") || text.includes("arcat") || text.includes("arcac")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "Dame un momento, ya te muestro 🤓";
-
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-    p.appendChild(pestañaChat);
-    pestañaChat.classList.add("Pestaña");
-
-
-    BocaADA(2000);
-    responsiveVoice.speak('Dame un momento, ya te muestro', 'Spanish Latin American Female');
-
-    setTimeout(() => {
-      document.getElementById("btn3").click()
-    }, 3000);
-
-  } else if (text.includes("enfermedad renal crónica") || text.includes("grc") || text.includes("erc") || text.includes("la enfermedad renal crónica")) {
-    p = document.createElement("p");
-    p.classList.add("replay");
-    p.innerText = "Dame un momento, ya te muestro 🤓";
-
-    texts.appendChild(p).appendChild(horas);
-    p.appendChild(check);
-    p.appendChild(pestañaChat);
-    pestañaChat.classList.add("Pestaña");
-
-
-    BocaADA(2000);
-    responsiveVoice.speak('dame un momento, ya te muestro', 'Spanish Latin American Female');
-
-    setTimeout(() => {
-      document.getElementById("btn4").click()
-    }, 3000);
-
-  } else if (text.includes("blockchain")) {
+  
+   else if (text.includes("blockchain") || text.includes("bloch") || text.includes("¿Que es el blockchain?")) {
     p = document.createElement("p");
     p.classList.add("replay");
     p.innerText = "La implementacion de blockchain en la salud nos permite tener datos limpios y trasparentes asi aumentando la seguridad de la informacion,dame un momento🤓";
@@ -375,11 +105,107 @@ function Desicion(check, horas, texts, p, text) {
 
 
     BocaADA(6000);
-    responsiveVoice.speak('La implementacion de blockchain en la salud nos permite tener datos limpios y trasparentes.', 'Spanish Latin American Female');
+    responsiveVoice.speak('la implementacion de blockchain en la salud nos permite tener datos limpios y trasparentes.', 'Spanish Latin American Female');
 
     EsperaAudio("así aumentando la seguridad de la informacion, dame un momento", 7000, 4100, "btn100");
 
+  }else if (text.includes("¿Que es HIGIA?") || text.includes("higia") || text.includes("lejía") || text.includes("ysy a") ||  text.includes("exigía") || text.includes("hégira") || text.includes("égida") ||  text.includes("y gía") )   {
+    p = document.createElement("p");
+    p.classList.add("replay");
+    p.innerText = "HIGIA es una Herramienta interactiva de inteligencia de negocios que dispone información epidemiológica de las diferentes enfermedades de alto costo,dame un momento🤓";
+    texts.appendChild(p).appendChild(horas);
+    p.appendChild(check);
+    p.appendChild(pestañaChat);
+    pestañaChat.classList.add("Pestaña");
+    BocaADA(6000);
+    responsiveVoice.speak('igia es una Herramienta interactiva de inteligencia de negocios que dispone informacion', 'Spanish Latin American Female');
+    EsperaAudio("epidemiológica de las diferentes enfermedades de alto costo,dame un momento", 6500, 4800, "btn103");
+  
+  }else if (text.includes("¿Que es ARCAC?") || text.includes("arca") || text.includes("arcade") || text.includes("Art Attack")  || text.includes("Arkham") )   {
+    p = document.createElement("p");
+    p.classList.add("replay");
+    p.innerText = "Claro, dame un segundo";
+    texts.appendChild(p).appendChild(horas);
+    p.appendChild(check);
+    p.appendChild(pestañaChat);
+    pestañaChat.classList.add("Pestaña");
+
+    QuebuenaP(2000,"btn104");    
+    responsiveVoice.speak('Claro, dame un segundo', 'Spanish Latin American Female');
+  
+  }else if (text.includes("modelo predictivo poblacional") || text.includes("modelo predictivo") || text.includes("grc")  ||  text.includes("¿Que es el modelo predictivo poblacional?") )   {
+    p = document.createElement("p");
+    p.classList.add("replay");
+    p.innerText = "Un segundo";
+    texts.appendChild(p).appendChild(horas);
+    p.appendChild(check);
+    p.appendChild(pestañaChat);
+    pestañaChat.classList.add("Pestaña");
+
+
+    QuebuenaP(1000,"btn105");    
+    responsiveVoice.speak('Un segundo', 'Spanish Latin American Female');
+  
+  }else if (text.includes("herramientas técnicas") || text.includes("¿Que herramientas tecnicas provee la CAC?")    )   {
+    p = document.createElement("p");
+    p.classList.add("replay");
+    p.innerText = "Que buena pregunta,dame un momento";
+    texts.appendChild(p).appendChild(horas);
+    p.appendChild(check);
+    p.appendChild(pestañaChat);
+    pestañaChat.classList.add("Pestaña");
+
+    QuebuenaP(2500,"btn106");    
+    responsiveVoice.speak('que buena pregunta,dame un momento', 'Spanish Latin American Female');
+  
+  }else if (text.includes("¿Cuales son los consensos que genera la CAC?") || text.includes("conceptos")  || text.includes("consejos") || text.includes("consenso") || text.includes("consensos"))   {
+    p = document.createElement("p");
+    p.classList.add("replay");
+    p.innerText = "Que buena pregunta,dame un momento";
+    texts.appendChild(p).appendChild(horas);
+    p.appendChild(check);
+    p.appendChild(pestañaChat);
+    
+    pestañaChat.classList.add("Pestaña");
+    QuebuenaP(2500,"btn107");    
+    responsiveVoice.speak('que buena pregunta,dame un momento', 'Spanish Latin American Female');
+    
+  }else if (text.includes("¿Como acceder a los libros de situacion de enfermedades de alto costo?")  || text.includes("enfermedades de alto costo") || text.includes(" b y H sida") || text.includes("artritis") || text.includes("b&h y Sida")|| text.includes("hemofilia") || text.includes("cáncer") || text.includes("enfermedad renal") || text.includes("hepatitis b")  )  {
+    p = document.createElement("p");
+    p.classList.add("replay");
+    p.innerText = "Que buena pregunta,dame un momento";
+    texts.appendChild(p).appendChild(horas);
+    p.appendChild(check);
+    p.appendChild(pestañaChat);
+
+    pestañaChat.classList.add("Pestaña");
+
+    QuebuenaP(2500,"btn109");    
+    responsiveVoice.speak('que buena pregunta,dame un momento', 'Spanish Latin American Female');
+    
+  }else if (text.includes("libros de investigación") || text.includes("¿Cuales son los libros de investigación que provee la CAC?") || text.includes("libro de investigación") )  {
+    p = document.createElement("p");
+    p.classList.add("replay");
+    p.innerText = "Que buena Pregunta, Ya te muestro";
+    texts.appendChild(p).appendChild(horas);
+    p.appendChild(check);
+    p.appendChild(pestañaChat);
+    
+    pestañaChat.classList.add("Pestaña");
+
+    QuebuenaP(2500,"btn109");
+    responsiveVoice.speak('que buena pregunta, Ya te muestro', 'Spanish Latin American Female');
+
+    
+    // EsperaAudio("epidemiológica de las diferentes enfermedades de alto costo,dame un momento", 6500, 4800, "btn103");
+   
   }
+  
+  
+
+
+  
+
 
 
 
@@ -391,15 +217,28 @@ function Desicion(check, horas, texts, p, text) {
 
 
 // HITOSCAC
-else if (text.includes("¿Qué No es la Cuenta de Alto Costo?")) {
+else if (text.includes("¿Qué No es la Cuenta de Alto Costo?") || text.includes("qué no es la cuenta alto costo") || text.includes("qué no es la caca")  ) {
+
   p = document.createElement("p");
   p.classList.add("replay");
-  p.innerText = "La implementacion de blockchain en la salud nos permite tener datos limpios y trasparentes asi aumentando la seguridad de la informacion,dame un momento🤓";
-
+  p.innerText = "Nadie me habia hecho esa pregunta";
   texts.appendChild(p).appendChild(horas);
   p.appendChild(check);
+
   p.appendChild(pestañaChat);
   pestañaChat.classList.add("Pestaña");
+
+  p1 = document.createElement("p");
+  p1.classList.add("replay");
+  p1.innerText = "Nadie me habia hecho esa pregunta";
+  texts.appendChild(p1).appendChild(horas);
+  p1.appendChild(check);
+  
+
+
+
+
+  
 
 
   // BocaADA(6000);
@@ -426,6 +265,34 @@ else if (text.includes("¿Qué No es la Cuenta de Alto Costo?")) {
 
 
 
+else if (text.includes("caca") || text.includes("cuenta de alto costo") || text.includes("¿Que es la CAC?") || text.includes("la cac") || text.includes("cuenta")) {
+  p = document.createElement("p");
+  p.classList.add("replay");
+  p.innerText = " LA CAC (Cuenta de Alto Costo) 🥰 Somos una institución que facilita la gestión de las entidades del sistema de salud mediante la generación de información objetiva y confiable.Ya te doy mas detalles 😍";
+
+  texts.appendChild(p).appendChild(horas);  
+  p.appendChild(check);
+  p.appendChild(pestañaChat);
+  pestañaChat.classList.add("Pestaña");
+
+  responsiveVoice.speak('Somos una institución que facilita la gestión de las entidades del sistema de salud, ', 'Spanish Latin American Female');
+  BocaADA(5300);
+  EsperaAudio("mediante la generación de información objetiva y confiable, ya te doy mas detalles", 5900, 5600, "btn102");
+  
+}else if (text.includes("una pregunta") || text.includes("tengo una pregunta")) {
+  p = document.createElement("p");
+  p.classList.add("replay");
+  p.innerText = "Claro dimela 😉";
+
+  texts.appendChild(p).appendChild(horas);
+  p.appendChild(check);
+  p.appendChild(pestañaChat);
+  pestañaChat.classList.add("Pestaña");
+
+  responsiveVoice.speak('Claro dimela', 'Spanish Latin American Female');
+  BocaADA(1800);
+
+}
 
   else {
     p = document.createElement("p");

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <!-- MODAL MICRO -->
 
-    <link rel="icon" href="../Img/simbolo_cac_color.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="../Img/simbolo_cac_color2.png" type="image/gif" sizes="16x16">
 
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +33,6 @@
 
     <!-- Comando de voz -->
 
-
-    <!-- <script src="../js/annyang.min.js"></script> -->
     <!--Voice ADA  -->
     <script src="https://code.responsivevoice.org/responsivevoice.js?key=Dy5W4C59"></script>
 
@@ -46,11 +44,9 @@ font-family: 'Montserrat', sans-serif;
 font-weight: bold;">
     </style>
 
-
-
     <div class="contenedorGeneral container-fluid">
         <!-- Intro -->
-        <div class="ContenedorIntro box quit">
+        <div class="ContenedorIntro  quit box ">
             <div class="row">
                 <div class="col-3 ColumnaIntroADA  ">
                     <img class="LogoCACIntro" src="../img/LOGO CAC_Colores y Blanco.png" alt="" width="95%">
@@ -71,7 +67,7 @@ font-weight: bold;">
 
 
         <!-- Videos -->
-        <div class="ContenedorVideosGeneral  box">
+        <div class="ContenedorVideosGeneral quit box">
             <div class="row">
 
                 <div class="col-6  ColumnVideosContenedors1  ">
@@ -91,7 +87,7 @@ font-weight: bold;">
 
 
         <!-- WhatsApp  -->
-        <div class="ContenedorWhatsAPPGeral quit box">
+        <div class="ContenedorWhatsAPPGeral box">
             <div class="row">
                 <div class="col-5 ContenedorADAWhast">
                     <?php include("AdaWhats.html"); ?>

@@ -9,11 +9,12 @@
 
 .ColumnVideosContenedors1 {
 
-background: rgb(0,15,114); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(0,15,114,1) 0%, rgba(0,0,0,1) 60%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(0,15,114,1) 0%,rgba(0,0,0,1) 60%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(0,15,114,1) 0%,rgba(0,0,0,1) 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000f72', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+background: rgb(28,27,135); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(28,27,135,1) 0%, rgba(22,22,22,1) 29%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(28,27,135,1) 0%,rgba(22,22,22,1) 29%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(28,27,135,1) 0%,rgba(22,22,22,1) 29%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1b87', endColorstr='#161616',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 
   width: 100%;
@@ -243,7 +244,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000f72', end
 
 /* CArt */
 .watermark{
-  width: 20px;
+  width: 15px;
   position: absolute;
   left: 0.5rem;
   top: 1rem;
@@ -254,7 +255,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000f72', end
   width: var(--size);
   
   padding: 5px 10px 10px 10px ;
-  background: #111111;
+  background: #1d1c1c;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 2ms;
@@ -275,11 +276,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000f72', end
   align-items: center;
   border-radius: 10%;
 } 
+
+
 .imgSpoty{
   position: absolute;
   width: 180px;
-  height: 148px;
-  border-radius:  5px 5px 10px 10px;
+  height: 160px;
+  border-radius:  10px 10px 10px 10px;
   opacity: 0.3;
   
 }
@@ -314,17 +317,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000f72', end
 .PrimerCuadro{
 position: absolute;
 height: 20px;
-width: 4%;
-top: 65%;
+width: 3%;
+top: 70%;
 left: 0%;
 }
 
 
 .SegundoCuadro{
 position: absolute;
-height: 5%;
+height: 4.2%;
 width: 100%;
-bottom: 6%;
+bottom: 3.3%;
 left: 0;
 border-radius:  0 0 10px 10px;
 }
@@ -332,7 +335,7 @@ border-radius:  0 0 10px 10px;
 position: absolute;
 color: white;
 font-weight:900 ;
-top: 65%;
+top: 70%;
 left: 5%;
 }
 

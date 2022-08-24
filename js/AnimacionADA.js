@@ -93,6 +93,23 @@ function BocaADA(time){
     }, time);
 }
 
+function QuebuenaP(time,btn){
+    ADAIMg.setAttribute('src', '../img/ADA/ADA-lateral-der-2.gif');
+    $(".ContenedorBocca").removeClass("quit");
+    setTimeout(()=>{
+        $(".ContenedorBocca").addClass("quit");
+    }, time);
+    setTimeout(()=>{
+        ADAIMg.setAttribute('src', '../img/ADA/ADA-lateral-der.gif');
+        $(".contenedorLista").removeAttr('disabled');
+        $(".BloquearBoton").removeAttr('disabled', 'disabled');
+
+    }, time);
+    setTimeout(() => {
+        document.getElementById(btn).click()
+    }, time+500);
+}
+
 
 function EsperaAudio(texto,time,masTime,btn) {
     setTimeout(() => {

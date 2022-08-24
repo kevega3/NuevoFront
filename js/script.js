@@ -58,7 +58,6 @@ function saludaSpoty() {
   } else if (hours > 1 && hours < 12) {
     SaludarSpoty.innerHTML = "Buenos Días";
   } else {
-    alert(hours);
     SaludarSpoty.innerHTML = "Buenas Tardes";
   }
 
@@ -168,24 +167,6 @@ function Preguntados(pregunta) {
 
 
 
-
-
-
-
-
-// BotonesPreguntados
-
-
-
-// function closeVoice() {
-//   var ada = cambiaImg();
-//   return ada;
-// }
-
-
-// function closeVoiceYoutub() {
-//   condicion = false;
-// }
 
 
 
