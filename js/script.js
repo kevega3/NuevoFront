@@ -1,12 +1,3 @@
-function ActivarBotones(){
-  $(".contenedorLista").removeAttr('disabled');
-}
-
-
-function BloquearBotones(){
-  $(".contenedorLista").attr('disabled', 'disabled');
-}
-
 
 // Horas
 function Horas(){
@@ -69,6 +60,7 @@ function saludaSpoty() {
 function activeVoice() { 
 
   $(".BloquearBoton").attr('disabled', 'disabled');
+  $(".contenedorLista").addClass("opacado"); 
   
   QuitarBtonMi();
   PosicionUno();
@@ -118,6 +110,7 @@ function activeVoice() {
   recognition.addEventListener("end", () => {
     PonerQuitarBtonMi();
     $(".BloquearBoton").removeAttr('disabled');
+    $(".contenedorLista").removeClass("opacado"); 
   });
   recognition.start();
 }
@@ -128,6 +121,7 @@ function activeVoice() {
 function Preguntados(pregunta) {
   // DesactivaBtn
   $(".BloquearBoton").attr('disabled', 'disabled');
+  $(".contenedorLista").addClass("opacado"); 
   // DesactivaBtn
   const texts = document.querySelector(".texts");
   let p = document.createElement("p");

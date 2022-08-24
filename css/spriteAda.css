@@ -4,18 +4,14 @@
     top: 15.5%;
     /* background: black; */
 }
-
 #sprite-image {
-    height: 47px;
-    width: 57px;
-    background: url("../img/BocaADa/ADABocas.png")
-      0px 0px;
-    animation: play 1.0s steps(8) infinite;
-    /* position: absolute;
-    left: 59%;
-    top: 80%; */
-   
+  height: 57px;
+  width: 67px; 
+  background: url("../img/BocaADa/ADABocas.png") 0px 0px;
+  /* background-size: 500px 500px; */
+  animation: play 1.3s steps(8) infinite;
   }
+
   @keyframes play {
     100% {
       background-position: -1472px;
@@ -23,21 +19,19 @@
   }
 
 .bocaAda{
-    animation: bounce-down 6.5s linear infinite;
+  /* height: 47px;
+  width: 57px; */
+  animation: bounce-down 4.2s linear infinite;
 }
-
-
-
 
   /* arriba abajo */
 
-  
 @-webkit-keyframes bounce-down {
     25% {
-         -webkit-transform: translateY(5px);
+         -webkit-transform: translateY(8px);
     }
     50%, 100% {
-         -webkit-transform: translateY(0);
+         -webkit-transform: translateY(2px);
     }
     75% {
          -webkit-transform: translateY(5px);

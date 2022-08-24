@@ -13,7 +13,7 @@ $(".circlein").animatedModal({
     animatedIn: 'lightSpeedIn',
     animatedOut: 'bounceOutDown',
     color: '#000000',
-    width: '70% ',
+    width: '67%',
     left: '0%',
 });
 

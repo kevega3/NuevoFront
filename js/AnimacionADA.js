@@ -90,6 +90,7 @@ function BocaADA(time){
         ADAIMg.setAttribute('src', '../img/ADA/ADA-lateral-der.gif');
         $(".contenedorLista").removeAttr('disabled');
         $(".BloquearBoton").removeAttr('disabled', 'disabled');
+        $(".contenedorLista").removeClass("opacado"); 
     }, time);
 }
 
@@ -123,7 +124,7 @@ function EsperaAudio(texto,time,masTime,btn) {
     }, time+masTime);
     setTimeout(() => {
         document.getElementById(btn).click()
-    }, time+masTime+500);
+    }, time+masTime+800);
 }
 
 function QuitarBtonMi(){

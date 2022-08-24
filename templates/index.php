@@ -34,8 +34,7 @@
     <!-- Comando de voz -->
 
     <!--Voice ADA  -->
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=Dy5W4C59"></script>
-
+    <script src="../js/responsivevoice.js"></script>
     <title>15 años </title>
 </head>
 
@@ -46,7 +45,7 @@ font-weight: bold;">
 
     <div class="contenedorGeneral container-fluid">
         <!-- Intro -->
-        <div class="ContenedorIntro  quit box ">
+        <div class="ContenedorIntro quit box ">
             <div class="row">
                 <div class="col-3 ColumnaIntroADA  ">
                     <img class="LogoCACIntro" src="../img/LOGO CAC_Colores y Blanco.png" alt="" width="95%">
@@ -67,7 +66,7 @@ font-weight: bold;">
 
 
         <!-- Videos -->
-        <div class="ContenedorVideosGeneral quit box">
+        <div class="ContenedorVideosGeneral box">
             <div class="row">
 
                 <div class="col-6  ColumnVideosContenedors1  ">
@@ -87,7 +86,7 @@ font-weight: bold;">
 
 
         <!-- WhatsApp  -->
-        <div class="ContenedorWhatsAPPGeral box">
+        <div class="ContenedorWhatsAPPGeral quit box ">
             <div class="row">
                 <div class="col-5 ContenedorADAWhast">
                     <?php include("AdaWhats.html"); ?>
