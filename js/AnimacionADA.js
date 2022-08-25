@@ -87,6 +87,17 @@ function BocaADA(time){
         $(".ContenedorBocca").addClass("quit");
     }, time);
     setTimeout(()=>{
+        ADAIMg.setAttribute('src', '../img/ADA/ADA-lateral-der.gif'); 
+    }, time);
+}
+
+function BocaADARapido(time){
+    ADAIMg.setAttribute('src', '../img/ADA/ADA-lateral-der-2.gif');
+    $(".ContenedorBocca").removeClass("quit");
+    setTimeout(()=>{
+        $(".ContenedorBocca").addClass("quit");
+    }, time);
+    setTimeout(()=>{
         ADAIMg.setAttribute('src', '../img/ADA/ADA-lateral-der.gif');
         $(".contenedorLista").removeAttr('disabled');
         $(".BloquearBoton").removeAttr('disabled', 'disabled');
@@ -108,6 +119,9 @@ function QuebuenaP(time,btn){
     }, time);
     setTimeout(() => {
         document.getElementById(btn).click()
+        $(".contenedorLista").removeAttr('disabled');
+        $(".BloquearBoton").removeAttr('disabled', 'disabled');
+        $(".contenedorLista").removeClass("opacado"); 
     }, time+500);
 }
 
@@ -123,6 +137,9 @@ function EsperaAudio(texto,time,masTime,btn) {
         ADAIMg.setAttribute('src', '../img/ADA/ADA-lateral-der.gif');
     }, time+masTime);
     setTimeout(() => {
+        $(".contenedorLista").removeAttr('disabled');
+        $(".BloquearBoton").removeAttr('disabled', 'disabled');
+        $(".contenedorLista").removeClass("opacado");
         document.getElementById(btn).click()
     }, time+masTime+800);
 }
